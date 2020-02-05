@@ -27,7 +27,7 @@ const Login: React.FC<LoginProps> = props => {
           }}
           value={inputEmail}
         />
-        <button type="submit" onClick={submit}>submit</button>
+        <button type="submit" onClick={submit}>送信</button>
     </form>
     </div>
   );
