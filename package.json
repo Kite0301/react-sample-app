@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./node_modules package-lock.json && npm i",
     "build": "webpack -p",
-    "eslint": "eslint -c ./.eslintrc.json 'src/**/*.{ts,tsx}'",
+    "lint": "eslint -c ./.eslintrc.json 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix -c ./.eslintrc.json 'src/**/*.{ts,tsx}'",
     "start": "webpack-dev-server -d --content-base ./public"
   },
   "keywords": [],
@@ -23,8 +24,11 @@
     "clean-webpack-plugin": "^3.0.0",
     "connected-react-router": "^6.6.1",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
